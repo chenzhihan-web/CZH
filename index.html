@@ -6,7 +6,7 @@
     <title>个人简历 - 陈涵</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: '宋体', SimSun, serif; /* 字体改为宋体 */
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -14,21 +14,25 @@
             color: #333;
         }
         header {
-            background: #ffcc00; /* 黄色背景 */
+            background: #007bff; /* 蓝色背景 */
             color: #fff; /* 白色文字 */
-            padding: 20px 0;
+            padding: 60px 0; /* 增加页眉高度 */
             text-align: center;
         }
         nav {
-            background: #444;
-            color: #fff;
+            background: rgba(255, 255, 255, 0.8); /* 白色半透明 */
             padding: 10px;
             text-align: center;
+            position: sticky; /* 导航框固定 */
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #fff;
+            color: #333; /* 导航文字颜色 */
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
         .container {
             width: 80%;
@@ -37,8 +41,14 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        h1 {
+            font-size: 2em; /* 名字标题缩小一号 */
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em; /* 所有标题缩小一号 */
             color: #333;
+            margin-top: 0;
         }
         .section {
             margin-bottom: 20px;
@@ -61,7 +71,7 @@
 </head>
 <body>
     <header>
-        <h1>陈涵</h1> <!-- 页眉文字为“陈涵” -->
+        <h1>陈涵</h1> <!-- 名字居中 -->
     </header>
     <nav>
         <a href="#about">关于</a>
